@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <title>vux-aid</title>
+  <link rel="stylesheet" href="./static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./static/css/pluto.css">
+</head>
+
+<body>
+  <div id="app-box"></div>
+  <!-- built files will be auto injected -->
+
+  <script src="./static/js/mock-min.js"></script>
+  <script src="./static/js/pluto.js"></script>
+  <script>
+    try {
+      apiready = function () {
+        api.sendEvent("ab")
+        api.addEventListener({
+          name: 'ab'
+        }, function (ret, err) {
+          alert(0)
+        })
+  
+      }
+          
+    } catch (e) {
+
+    }
+  </script>
+</body>
+
+</html>

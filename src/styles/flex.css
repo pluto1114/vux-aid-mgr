@@ -1,0 +1,14 @@
+.ub{
+    display: flex;
+}
+.ub-v{
+    display: flex;
+    flex-direction:column;
+}
+.uc{
+    justify-content: center;
+    align-items: center;
+}
+.uf-1{
+    flex:1;
+}
