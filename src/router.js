@@ -18,6 +18,8 @@ import ProjectSend from '@/views/ProjectSend'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
+  base:'/vux-aid',
   routes: [
     {
       path: '/',
