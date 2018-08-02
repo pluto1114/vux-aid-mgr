@@ -36,8 +36,18 @@ export default {
       index: 1
     }
   },
+  watch:{
+    
+  },
   created(){
-    this.$router.push('/index')
+    
+  },
+  mounted(){
+    // console.log('mounted')
+    // this.$router.push('/index')
+  },
+  methods:{
+   
   },
   components: {
     XHeader,

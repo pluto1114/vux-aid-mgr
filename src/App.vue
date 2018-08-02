@@ -1,5 +1,6 @@
 <template>
   <div id="app" style="height:100%;">
+    <loading v-model="isLoading"></loading>
     <transition :name="'fade'">
       <keep-alive>
       <router-view class="router-view"></router-view>
@@ -9,8 +10,18 @@
 </template>
 
 <script>
+import { Loading } from 'vux'
+import { mapState } from 'vuex'
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    Loading
+  },
+  computed: {
+    ...mapState({
+      isLoading: state => state.main.isLoading
+    })
+  }
 }
 </script>
 
@@ -26,7 +37,8 @@ body {
 }
 @media only screen{
   html,body{
-    // max-width:480px;
+    max-width:480px;
+    max-height: 800px;
   }
 }
 .header {

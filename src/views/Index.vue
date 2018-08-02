@@ -90,7 +90,7 @@ export default {
           date: Mock.mock('@now')
         }
       }, {
-        src: 'http://img.dahe.cn/qf/2016/5/13/106SJPWA9.jpg',
+        src: 'http://img3.utuku.china.com/498x0/news/20171104/51cfec10-d885-471d-9f26-4b8f13b336b5.jpg',
         title: Mock.mock('@ctitle'),
         desc: Mock.mock('@cparagraph'),
         url: '/article',

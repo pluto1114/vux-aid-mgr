@@ -23,7 +23,7 @@ export default {
       msg: 'Welcome to Your Vue.js App',
       article:{
         title:'深入帮扶贫困户精准扶贫暖人心',
-        img:'http://img.dahe.cn/qf/2016/5/13/106SJPWA9.jpg',
+        img:'http://img3.utuku.china.com/498x0/news/20171104/51cfec10-d885-471d-9f26-4b8f13b336b5.jpg',
         date:Mock.mock('@now'),
         paragraph:Mock.mock('@cparagraph(10)')
       }

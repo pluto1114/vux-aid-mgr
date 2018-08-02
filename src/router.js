@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Login from '@/views/Login'
 import Main from '@/views/Main'
 import Index from '@/views/Index'
 import Index2 from '@/views/Index2'
@@ -17,13 +18,23 @@ import ProjectSend from '@/views/ProjectSend'
 
 Vue.use(Router)
 
-export default new Router({
+const router=new Router({
   routes: [
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
+    },
     {
       path: '/',
       name: 'Main',
       component: Main,
       children: [
+        {
+          path: '',
+          name: 'default',
+          component: Index
+        },
         {
           path: 'index',
           name: 'Index',
@@ -78,3 +89,7 @@ export default new Router({
     },
   ]
 })
+
+
+
+export default router

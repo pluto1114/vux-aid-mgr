@@ -1,24 +1,24 @@
 <template>
   <div class="">
     <x-header class="header" :left-options="{backText: ''}">精准扶贫</x-header>
-     <div class="content">
-       
-     </div>
+    <div class="content">
+
+    </div>
   </div>
 </template>
 
 <script>
-import { XHeader} from 'vux'
+import { XHeader } from 'vux'
 export default {
-  data () {
+  data() {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
   },
   components: {
-        XHeader,
-       
-    }
+    XHeader,
+
+  }
 }
 </script>
 
